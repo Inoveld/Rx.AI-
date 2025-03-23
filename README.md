@@ -78,6 +78,7 @@ def extract_keywords_with_chatgpt(user_input):
 Dit laat direct de kracht van LangChain zien doordat ik hier al gebruik maak van de PromptTemplate functie. Hierin geef ik eigenlijk de opdracht uit, getypt wat er moet gebeuren met de Uservraag. Hierin kun je dus al veel tweaken. Je kan bijvoorbeeld aangeven dat er op combinaties van woorden gezocht moet worden, of altijd in context van een bepaalde ziekte, noem maar op. Met de ‘ temperature’  functie beheer je de vrijheid die de chatbot mag nemen met het interpeteren van de data, deze heb ik op 0 gezet om zoveel mogelijk de feiten te gebruiken. 
 
 Daarna gaat het de CSE in:
+
 def google_search(query, num_results=10):
    
     service = build("customsearch", "v1", developerKey=GOOGLE_API_KEY)
