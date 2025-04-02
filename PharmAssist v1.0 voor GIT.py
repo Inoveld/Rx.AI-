@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from langchain_openai import OpenAI
+from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
